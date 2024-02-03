@@ -1,0 +1,105 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Arial', 'sans-serif';
+    box-sizing: border-box;
+
+}
+:root {
+    --first: purple;
+}
+
+body{
+    background: radial-gradient(circle at center, 
+    #E2D1F9,#c7a3f5 , #a877e9),100% ;
+ display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 90vh;
+}
+
+#home-form{
+    width: 300px;
+    height: 330px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 2px 5px 13px rgb(14, 13, 13);
+    background-color: #317773;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    
+
+}
+#home-form img{
+height: 70px;
+width: 70px;
+margin-left: 33%;
+}
+
+#scanner-form{
+    width: 420px;
+    height: 350px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 2px 5px 13px rgb(14, 13, 13);
+    background-color: #317773;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    display: none;
+
+}
+
+#my-qr-reader{
+width: 400px;
+border-radius: 5%;
+}
+
+#generator-form{
+    width: 420px;
+    height: 350px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 2px 5px 13px rgb(14, 13, 13);
+    background-color: #317773;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    display: none;
+    
+}
+.backhome{
+    text-align: start;
+    align-items: start;
+    justify-content: start;
+margin-bottom: 10px;
+    width: 380px;
+    font-size: 20px;
+}
+.backhome i{
+    border: 1px solid rgb(198, 198, 228);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+
+#generator-form input{
+    height: 30px;
+    width: 250px;
+    background-color: rgb(185, 229, 229);
+    justify-self: center;
+}
+#generator-form button{
+    height: 30px;
+    width: 200px;
+    background-color:rgb(217, 167, 240);
+    justify-self: center;
+}
+#generator-form img{
+    justify-self: center;
+}

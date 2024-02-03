@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRscanner&generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="home-form">
+        <h2 class="form-head">Welcome!</h2>
+        <h3>Generate or Scan QR code here</h3>
+        <img src="PhotoRoom-20240115_131634 (1).png" alt="">
+        <select name="QR" id="QR" >
+            <option value="QR scanner">QR scanner</option>
+            <option value="QR generator">QR generator</option>
+        </select>
+        <div class="button-action">
+            <button onclick="change_page()">Enter</button>
+        </div>
+    </div>
+
+    <div id="scanner-form">
+        <div class="backhome"><i onclick="backhomepage()" class="fa-solid fa-arrow-left"></i></div>
+        <h2 class="form-head">Scan Your QR Here</h2>
+        <div id="your-qr-result">
+            <div id="my-qr-reader" >
+            </div>
+        </div>
+    </div>
+
+    <div id="generator-form">
+        <div class="backhome"><i onclick="backhomepage()" class="fa-solid fa-arrow-left"></i></div>
+        <h2 class="form-head">QR Generator</h2>
+        <input id="input" type="text" placeholder="Enter url here">
+        <button id="generate_qr">Generate QR</button>
+        <img id="qrcode" src="" alt="">
+        
+        
+    </div>
+    
+
+    <script src="https://unpkg.com/html5-qrcode"></script>
+
+    <script src="resp.js"></script>
+</body>
+
+</html>
